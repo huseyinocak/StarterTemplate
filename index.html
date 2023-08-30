@@ -4,12 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="wertsoftware starter template | Html | CSS | SCSS | JS">
+    <meta name="description" content="Template to be used for wertsoftware web UI">
+    <meta name="author" content="Hüseyin OCAK">
     <title>wertsoftware starter Template</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <header id="id">
+    <header id="id" class="fixed-top">
         <section id="top_header" class="bg-primary py-3 text-white d-none d-md-block">
             <div class="container">
                 <div class="row">
@@ -23,15 +26,338 @@
                         <h6> <i class="bi bi-envelope"></i> user@yourdomain.com</h6>
                     </div>
                     <div class="col-md-4 text-end">
-                        <a href="" class="btn btn-primary text-white" style="background-color: #3b5990;"><i class="bi bi-facebook"></i></a>
-                        <a href="" class="btn btn-primary text-white" style="background-color: #55acee;"><i class="bi bi-twitter"></i></a>
-                        <a href="" class="btn btn-primary text-white" style="background-color: #ac5bac;"><i class="bi bi-instagram"></i></a>
-                        <a href="" class="btn btn-primary text-white" style="background-color: #0082ca;"><i class="bi bi-linkedin"></i></a>
+                        <a href="" class="btn btn-primary text-white" style="background-color: #3b5990;"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="" class="btn btn-primary text-white" style="background-color: #55acee;"><i
+                                class="bi bi-twitter"></i></a>
+                        <a href="" class="btn btn-primary text-white" style="background-color: #ac5bac;"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="" class="btn btn-primary text-white" style="background-color: #0082ca;"><i
+                                class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
             </div>
         </section>
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 sticky-top">
+            <div class="container">
+                <a href="#" class="navbar-brand">wertsoftware</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="navmenu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="#hero_area" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#service" class="nav-link">Service</a></li>
+                        <li class="nav-item"><a href="#team" class="nav-link">Team</a></li>
+                        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li class="nav-item"><a href="#analysis" class="nav-link">Analysis</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+    <section id="hero_area" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 align-self-center">
+                    <h3>Let's Learning Coding</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae saepe commodi quos delectus porro
+                        ex ipsam, quasi quam explicabo, quo, minus obcaecati quas? Facilis non, impedit dolores possimus
+                        aliquam vero?</p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#join">Join Now</a>
+                    <div class="modal fade" id="join">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title text-dark">Join Now</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Fill out this form</p>
+                                    <form action="">
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Name</label>
+                                            <input type="text" name="name" id="name" class="form-control"
+                                                placeholder="Enter Your Name">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="email" class="form-label">Email</label>
+                                            <input type="email" name="email" id="email" class="form-control"
+                                                placeholder="Enter Your Email">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Phone</label>
+                                            <input type="phone" name="phone" id="phone" class="form-control"
+                                                placeholder="Enter Your Phone">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Submit</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pt-4">
+                    <img src="assets/images/codering.svg" class="img-fluid" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-gear m-auto d-block btn-outline-primary pt-2 my-3"></i>
+                            <h4>Easy to Use</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sint nostrum tempora
+                                impedit, pariatur maxime omnis illum incidunt! Non pariatur accusantium corrupti maiores
+                                laboriosam saepe nihil mollitia nemo provident voluptates.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-graph-up-arrow m-auto d-block btn-outline-primary pt-2 my-3"></i>
+                            <h4>Awesome Desing</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sint nostrum tempora
+                                impedit, pariatur maxime omnis illum incidunt! Non pariatur accusantium corrupti maiores
+                                laboriosam saepe nihil mollitia nemo provident voluptates.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <i class="bi bi-people m-auto d-block btn-outline-primary pt-2 my-3"></i>
+                            <h4>Easy to Customize</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sint nostrum tempora
+                                impedit, pariatur maxime omnis illum incidunt! Non pariatur accusantium corrupti maiores
+                                laboriosam saepe nihil mollitia nemo provident voluptates.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="analysis" class="bg-light py-5">
+        <div class="row">
+            <div class="col-md-6 justify-content-center d-flex pt-5">
+                <img src="assets/images/man.svg" class="img-fluid w-50" alt="" srcset="">
+            </div>
+            <div class="col-md-6 align-self-center mt-3">
+                <h3>Analysis for Business Opportunities</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nihil accusamus ad ratione
+                    enim, expedita maxime quos ducimus. Praesentium cum animi sapiente ut ipsa incidunt, tenetur ratione
+                    quia qui magni!
+                    Ducimus quae, facere accusantium ex unde perspiciatis rerum. Blanditiis soluta similique corrupti
+                    quia, incidunt magni consequatur voluptate! Voluptatem ipsa molestiae hic consectetur mollitia nemo
+                    officia nulla ab ducimus, sed nostrum!
+                    Qui molestiae deleniti quibusdam, suscipit accusamus voluptatum tempora, iure similique eos
+                    consequatur possimus corporis quo aspernatur aliquid delectus voluptatem quasi, error omnis? Aperiam
+                    vel illum sed ipsum ea ut atque.</p>
+                <a href="#" class="btn btn-primary">See More Information</a>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="py-5">
+        <div class="container">
+            <div class="row text-center mb-3">
+                <div class="col-md-8 offset-md-3">
+                    <h2>Our Team</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus aspernatur quisquam, quas
+                        officia nobis odit dolorum velit, quo aliquid nemo deserunt, nisi vitae? Incidunt nam magni
+                        culpa praesentium laudantium provident?</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="assets/images/man3.jpg" alt="" class="img-fluid">
+                            <h4>David Clark</h4>
+                            <p>Web Designer</p>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="assets/images/man.jpg" alt="" class="img-fluid">
+                            <h4>Jone Clark</h4>
+                            <p>Web Development</p>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <img src="assets/images/man2.jpg" alt="" class="img-fluid">
+                            <h4>Michael Hardy</h4>
+                            <p>Graphic Designer</p>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-twitter"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-linkedin"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-youtube"></i>
+                            </a>
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="faq" class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="assets/images/faq.jpg" class="img-fluid rounded-2" alt="" srcset="">
+                </div>
+                <div class="col-md-7 align-self-center pt-3">
+                    <h2>FAQ Area</h2>
+                    <div class="accordion mt-3">
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#acc_01">Accordion One</button>
+                            </div>
+                        </div>
+                        <div id="acc_01" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor deserunt
+                                    assumenda dicta cupiditate expedita iure modi necessitatibus, optio nulla suscipit.
+                                    Ullam veniam magni illo distinctio magnam? Dicta, similique accusantium?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#acc_02">Accordion Two</button>
+                            </div>
+                        </div>
+                        <div id="acc_02" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor deserunt
+                                    assumenda dicta cupiditate expedita iure modi necessitatibus, optio nulla suscipit.
+                                    Ullam veniam magni illo distinctio magnam? Dicta, similique accusantium?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <div class="accordion-header">
+                                <button type="button" class="accordion-button" data-bs-toggle="collapse"
+                                    data-bs-target="#acc_03">Accordion Tree</button>
+                            </div>
+                        </div>
+                        <div id="acc_03" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores dolor deserunt
+                                    assumenda dicta cupiditate expedita iure modi necessitatibus, optio nulla suscipit.
+                                    Ullam veniam magni illo distinctio magnam? Dicta, similique accusantium?
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <h2>Contact Us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, similique.</p>
+                    <form action="" class="py-3 text-start">
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3">
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Enter Your Name">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Your Email">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Enter Your Subject">
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Enter Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+                <div class="col-md-5 justify-content-center align-self-center d-flex">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40508.33299884186!2d29.017891777846824!3d41.01962461325395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab9e7a7777c43%3A0x4c76cf3dcc8b330b!2sGalata%20Kulesi!5e0!3m2!1str!2str!4v1692908007487!5m2!1str!2str"
+                        width="600" height="450" class="rounded-3 shadow mt-4" style="border:0;" allowfullscreen=""
+                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="pt-4 pb-2 bg-secondary text-white text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2023 All Right Reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
